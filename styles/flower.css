@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+body {
+    background-color: #f5f8ff;
+}
+
+
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 90px;   
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.menu a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 15px;
+    color: #252432;
+}
+
+.menu img {
+    width: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+
+
+/* Mobile responsive */
+@media screen and (max-width: 768px) {
+    /* navbar responsive */
+    .navbar {
+        padding: 10px 20px;
+    }
+
+    .menu {
+        justify-content: flex-end;
+        gap: 0;
+    }
+
+    .menu a {
+        display: none;
+    }
+
+    .menu a:last-child {
+        display: flex;
+        font-weight: 700;
+    }
+}
