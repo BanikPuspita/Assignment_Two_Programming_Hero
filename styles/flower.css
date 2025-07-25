@@ -401,18 +401,18 @@ body {
 
 
 /* Mobile responsive */
-@media screen and (max-width: 431px) {
+@media screen and (max-width: 768px) {
 
     /* navbar responsive */
     .navbar {
-        padding: 10px 20px;
+        padding: 20px;
         justify-content: space-between;
     }
 
     .menu {
         display: flex;
         justify-content: flex-end;
-        flex: 1;
+
     }
 
     .menu a {
@@ -489,12 +489,13 @@ body {
         font-size: 36px;
         text-align: left;
         width: 500px;
+        padding-left: 140px;
         
     }
 
     .text-content ul {
         width: 500px;
-        padding-left: 10px;
+        padding-left: 140px;
     } 
 
     /* deal section */
@@ -508,9 +509,11 @@ body {
     
   .deal-card-small,
   .deal-card-large {
-    width: 100%; 
-    max-width: 100%; 
+    width: 600px; 
     height: auto; 
+    padding-left: 80px;
+    margin-left: 10px;
+    border-radius: 30px;
   }
 
   .left-deals {
@@ -528,7 +531,7 @@ body {
   }
     /* Join section */
  .subscribe-section {
-    width: 100%;
+    width: 540px;
     height: auto;
     padding: 40px 20px;
     flex-direction: column;
