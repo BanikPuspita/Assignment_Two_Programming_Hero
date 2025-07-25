@@ -16,6 +16,7 @@
 
 body {
     background-color: #f5f8ff;
+    overflow-x: hidden;
 }
 
 /* Shared styles */
@@ -404,11 +405,14 @@ body {
 
     /* navbar responsive */
     .navbar {
-        padding: 10px 30px;
+        padding: 10px 20px;
+        justify-content: space-between;
     }
 
     .menu {
+        display: flex;
         justify-content: flex-end;
+        flex: 1;
     }
 
     .menu a {
@@ -417,8 +421,15 @@ body {
 
     .menu a:last-child {
         display: flex;
+        align-items: center;
         font-weight: 700;
     }
+
+    
+  .menu a:last-child img {
+    width: 20px;
+    margin-right: 5px;
+  }
 
     /* Banner responsive */
      .banner-section {
@@ -451,8 +462,12 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
+        padding-left: 170px;
     } 
 
+    .plant-title {
+        padding-left: 120px;
+    }
     /* Plant lover responsive */
 
     .love-container {
@@ -461,27 +476,25 @@ body {
     }
 
     .main-img {
-        width: 400px;
+        width: 650px;
         height: auto;
+        
     }
 
     .badge {
         display: none;
     }
 
-    .text-content {
-        width: 420px;
-        text-align: left;
-    }
-
     .text-content h1 {
         font-size: 36px;
         text-align: left;
+        width: 500px;
+        
     }
 
     .text-content ul {
-        width: 100%;
-        padding-left: 1.2rem;
+        width: 500px;
+        padding-left: 10px;
     } 
 
     /* deal section */
@@ -489,59 +502,103 @@ body {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        padding: 0 20px;
     } 
 
-    /* Join section */
-    .subscribe-section {
-    flex-direction: column;
-    text-align: center;
-    height: auto;
+    
+  .deal-card-small,
+  .deal-card-large {
+    width: 100%; 
+    max-width: 100%; 
+    height: auto; 
+  }
+
+  .left-deals {
     width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .deal-card-small {
+    height: 180px; 
+  }
+
+  .deal-card-large {
+    height: 180px;
+  }
+    /* Join section */
+ .subscribe-section {
+    width: 100%;
+    height: auto;
     padding: 40px 20px;
+    flex-direction: column;
   }
 
   .subscribe-section h1 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-bottom: 20px;
   }
 
   .subscribe-section form {
-    flex-direction: column;
+    flex-direction: row; 
     width: 100%;
+    max-width: 100%;
   }
 
   .subscribe-section input[type="email"] {
-    width: 100%;
-    margin-bottom: 10px;
+    flex: 1;
+    padding: 12px;
+    font-size: 1rem;
+    min-width: 0; 
   }
 
   .subscribe-section button {
-    width: 100%;
-  } 
+    padding: 12px 20px;
+    white-space: nowrap;
+    font-size: 1rem;
+  }
 
   /* footer */
-    .logo img {
-    height: 40px;
+   .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px 20px;
+    gap: 30px;
   }
 
-  .plant-title h2,
-  .deal-title h2 {
-    font-size: 1.8rem;
-  }
-
-  .plant-title p,
-  .deal-title p {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-
-  .text-content {
+  .footer-left {
+    text-align: left;
     width: 100%;
-    padding: 0 20px;
   }
 
-  .text-content ul {
-    padding-left: 1rem;
-  } 
+  .footer-desc {
+    max-width: 100%;
+    font-size: 14px;
+  }
 
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .footer-links ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+
+  .footer-social {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+
+  .footer-social img {
+    width: 26px;
+    height: 26px;
+  }
 }
