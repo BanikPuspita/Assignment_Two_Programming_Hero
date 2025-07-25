@@ -117,6 +117,10 @@ body {
     padding: 20px 70px;
 }
 
+.plant-title h1 {
+    font-size: 40px;
+}
+
 .plant-card {
     text-align: center;
 }
